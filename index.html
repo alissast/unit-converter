@@ -14,15 +14,15 @@
 <body class="light-theme">
     <main>
         <header>
-            <div class="title-and-btn">
-                <h1 id="title">Metric/Imperial Unit Conversion</h1>
-                <button type="button" class="btn icon-btn" id="dark-mode-toggle" aria-label="Change to light theme">
+            <div id="dark-mode-btn-container" >
+                <button type="button" class="btn icon-btn" id="dark-mode-btn" aria-label="Change to light theme">
                     <span class="material-symbols-outlined">dark_mode</span>
-                 </button>
+                </button>
             </div>
+            <h1 id="title">Metric/Imperial Unit Conversion</h1>
             <div class="input-container">
                 <input type="text" placeholder="0" id="input-field">
-                <button>Convert</button>
+                <button class="btn text-btn">Convert</button>
             </div>
         </header>
         <div class="results-container">
