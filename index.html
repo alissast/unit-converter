@@ -14,27 +14,31 @@
 <body class="light-theme">
     <main>
         <header>
-            <div id="title-and-dark-mode-btn">
-                <h1>Metric/Imperial Unit Conversion</h1>
+            <div class="title-and-btn">
+                <h1 id="title">Metric/Imperial Unit Conversion</h1>
                 <button type="button" class="btn icon-btn" id="dark-mode-toggle" aria-label="Change to light theme">
                     <span class="material-symbols-outlined">dark_mode</span>
                  </button>
             </div>
-            <input type="text" placeholder="0">
-            <button>Convert</button>
+            <div class="input-container">
+                <input type="text" placeholder="0" id="input-field">
+                <button>Convert</button>
+            </div>
         </header>
-        <article>
-            <h2>Length (Meter/Feet)</h2>
-            <p><span class="input-val-metric"></span> meters = <span class="output-val-imperial"></span> feet | <span class="input-val-imperial"></span> feet = <span class="output-val-metric"></span> meters</p>
-        </article>
-        <article>
-            <h2>Volume (Liters/Gallons)</h2>
-            <p><span class="input-val-metric"></span> liters = <span class="output-val-imperial"></span> gallons | <span class="input-val-imperial"></span> gallons = <span class="output-val-metric"></span> liters</p>
-        </article>
-        <article>
-            <h2>Mass (Kilograms/Pounds)</h2>
-            <p><span class="input-val-metric"></span> kilos = <span class="output-val-imperial"></span> pounds | <span class="input-val-imperial"></span> pounds = <span class="output-val-metric"></span> kilos </p>
-        </article>
+        <div class="results-container">
+            <article>
+                <h2 class="unit-type-h2">Length (Meter/Feet)</h2>
+                <p><span class="input-val-metric"></span> meters = <span class="output-val-imperial"></span> feet | <span class="input-val-imperial"></span> feet = <span class="output-val-metric"></span> meters</p>
+            </article>
+            <article>
+                <h2 class="unit-type-h2">Volume (Liters/Gallons)</h2>
+                <p><span class="input-val-metric"></span> liters = <span class="output-val-imperial"></span> gallons | <span class="input-val-imperial"></span> gallons = <span class="output-val-metric"></span> liters</p>
+            </article>
+            <article>
+                <h2 class="unit-type-h2">Mass (Kilograms/Pounds)</h2>
+                <p><span class="input-val-metric"></span> kilos = <span class="output-val-imperial"></span> pounds | <span class="input-val-imperial"></span> pounds = <span class="output-val-metric"></span> kilos </p>
+            </article>
+        </div>
     </main>
     <script src="index.js"></script>
 </body>

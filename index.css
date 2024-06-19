@@ -7,6 +7,7 @@
 .light-theme {
     --color-header-bg: #6943FF;
     --color-header-fg: #FFFFFF;
+    --color-input-border: #B295FF;
     --color-main-bg: #F4F4F4;
     --color-main-fg: #353535;
     --color-section-bg: #FFFFFF;
@@ -17,6 +18,7 @@
 .dark-theme {
     --color-header-bg: #6943FF;
     --color-header-fg: #FFFFFF;
+    --color-input-border: #B295FF;
     --color-main-bg: #1F2937;
     --color-main-fg: #FFFFFF;
     --color-section-bg: #273549;
@@ -32,14 +34,61 @@ body {
 
 main {
     background-color: var(--color-main-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
     background-color: var(--color-header-bg);
     color: var(--color-header-fg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.title-and-btn {
+    margin: auto;
+}
+ 
+#title {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#input-field {
+    text-align: center;
+    font-size: 58px;
+    font-weight: 800;
+    height: 80px;
+    width: 120px;
+    color: var(--color-header-fg);
+    background-color: var(--color-header-bg);
+    border: 1px solid var(--color-input-border);
+    border-radius: 5px;
+}
+
+#input-field::placeholder {
+    color: var(--color-header-fg);
 }
 
 article {
     background-color: var(--color-section-bg);
+    color: var(--color-main-fg);
+    margin: 20px;
+}
+
+.results-container {
+    width: 100%;
+}
+
+.unit-type-h2 {
     color: var(--color-section-heading-fg);
 }
