@@ -28,8 +28,10 @@ function updateDarkModeBtn() {
     let currentTheme;
     if (document.body.classList.contains("dark-theme")) {
         currentTheme = "dark";
+        darkModeBtn.setAttribute("aria-label", "Change to light theme");
     } else {
-        currentTheme = "light"
+        currentTheme = "light";
+        darkModeBtn.setAttribute("aria-label", "Change to dark theme");
     }
 
     let iconHTML;
